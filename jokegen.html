@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dad Joke Generator</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffbe7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    #joke {
+      font-size: 1.5rem;
+      margin: 20px;
+      color: #222;
+      max-width: 600px;
+      padding: 0 20px;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 1rem;
+      background-color: #ffa500;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff8c00;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>👴 Dad Joke Generator</h1>
+  <div id="joke">Click the button to hear a dad joke!</div>
+  <button onclick="getJoke()">Hit me with a dad joke</button>
+
+  <script>
+    const jokes = [
+      "Why don't eggs tell jokes? They'd crack each other up.",
+      "I only know 25 letters of the alphabet. I don't know y.",
+      "Why did the math book look sad? Because it had too many problems.",
+      "I'm reading a book about anti-gravity. It's impossible to put down.",
+      "What do you call cheese that isn't yours? Nacho cheese.",
+      "I would tell you a construction joke, but I'm still working on it.",
+      "Did you hear about the guy who invented Lifesavers? He made a mint.",
+      "I used to play piano by ear, but now I use my hands.",
+      "Why can't you hear a pterodactyl go to the bathroom? Because the 'P' is silent.",
+      "I’m afraid for the calendar. Its days are numbered.",
+      "Want to hear a joke about paper? Never mind, it’s tearable.",
+      "Why do seagulls fly over the ocean? Because if they flew over the bay, they’d be bagels.",
+      "How does a penguin build its house? Igloos it together.",
+      "What do you call a factory that makes okay products? A satisfactory.",
+      "I told my wife she should embrace her mistakes... She gave me a hug."
+    ];
+
+    function getJoke() {
+      const randomIndex = Math.floor(Math.random() * jokes.length);
+      document.getElementById("joke").textContent = jokes[randomIndex];
+    }
+  </script>
+
+</body>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<a href="Scratch.html">
+    <div style="padding: 2px; background-color: #fffbe7; text-align: center; color: black;">
+      (Click here to go to my Scratch Page!)
+    </div>
+  </a>
+</html>
